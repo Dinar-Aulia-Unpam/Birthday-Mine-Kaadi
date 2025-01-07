@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAYANGGG</title>
+
+    <!-- bootstrap css cdn link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- bootstrap icon cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+
+    <!-- for adding animation to website we have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <nav
+      id="navbar-top"
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container-fluid px-5">
+        <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
+          >DYNOSOUR</a
+        >
+        <button
+          class="nav-menu d-md-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <i class="bi bi-menu-button-fill"></i>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galery">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gift">Gift</a>
+            </li>
+          </ul>
+        </div>
+        <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" onclick="playMusic()">PENCETTT INI DULU</button>
+      </div>
+    </nav>
+
+    <!-- Add the audio element -->
+    <audio id="birthdayMusic" src="audio/Happy Birthday Sayang.mp3"></audio>
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('birthdayMusic');
+            audio.play();
+        }
+    </script>
+    <!-- ...existing code... -->
+
+    <!-- navbar ends here -->
+
+    <!-- home section starts  -->
+    <section class="home pt-5 pb-5" id="home">
+      <div class="row justify-content-evenly align-middle">
+        <!-- here data-aos is used for adding aos animation  -->
+        <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+          <h2 style="color: #3f396d">
+            Hai, sayang <br /><span class="c-orange">Happy Birthday! <3 </span>
+          </h2>
+          <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+            How much you love me?
+          </button>
+          <a href="" class="link ms-4 d-none">See My Work</a>
+        </div>
+        <div class="col-10 col-md-4 d-none d-md-block">
+          <img src="images/flowers.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- home section ends here -->
+
+
+    <!-- galery section starts here -->
+    <section class="galery" id="galery">
+      <div class="heading text-center pt-5">
+        <small>GALERY</small>
+        <h3> say cheese! </h3>
+      </div>
+
+      <div id="myBtnContainer" class="text-center mt-4">
+        <!-- here we will create custom attribute using data- for filtering -->
+        <button class="filter-item" data-filter="all">All</button>
+        <button class="filter-item" data-filter="campus">campus life</button>
+        <button class="filter-item" data-filter="life">life update</button>
+      </div>
+      <div class="portfolio-body">
+        <div class="row justify-content-evenly px-4">
+          <div class="post col-md-4 campus all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/KP.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">alhamdulillah S.Kp</h4>
+                <span class="badge bg-secondary badge-pill">Sidang KP</span>
+                <span class="badge bg-secondary badge-pill">Laporan KP</span>
+                <span class="badge bg-secondary badge-pill mb-2">Campus Life</span
+                ><br />
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 campus all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/sempro-kaadi.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">semprollll moment</h4>
+                <span class="badge bg-secondary badge-pill">Sempro</span>
+                <span class="badge bg-secondary badge-pill">Ngoding</span>
+                <span class="badge bg-secondary badge-pill mb-2">Campus Life</span
+                ><br />
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 life all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/fotoshoot.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">fotbar pemain death note</h4>
+                <span class="badge bg-secondary badge-pill">Fotoshoot</span>
+                <span class="badge bg-secondary badge-pill">Deathnote</span>
+                <span class="badge bg-secondary badge-pill mb-2">Life Update</span
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly mt-4 px-4">
+          <div class="post col-md-4 campus all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/foto syarat skripsi.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">foto 4x6 dulu, sidang skripsinya comingsoon</h4>
+                <span class="badge bg-secondary badge-pill">Skripsi</span>
+                <span class="badge bg-secondary badge-pill">Ngoding</span>
+                <span class="badge bg-secondary badge-pill mb-2">Campus Life</span
+                ><br />
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 life all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img src="images/cod biawak.jpg" class="card-img-top" alt="..." />
+              <div class="card-body text-center">
+                <h4 class="card-title">COD biawak</h4>
+                <span class="badge bg-secondary badge-pill">Teko</span>
+                <span class="badge bg-secondary badge-pill">Movie</span>
+                <span class="badge bg-secondary badge-pill mb-2">Life Update</span
+                ><br />
+              </div>
+            </div>
+          </div>
+          <div class="post col-md-4 life all col-10 mt-3 mt-md-0" data-aos="fade-up">
+            <div class="card">
+              <img
+                src="images/new year .jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h4 class="card-title">celebrate new year together, be better 2025!</h4>
+                <span class="badge bg-secondary badge-pill">New Year</span>
+                <span class="badge bg-secondary badge-pill">Firework</span>
+                <span class="badge bg-secondary badge-pill mb-2">Life Update</span
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- galery section ends here -->
+
+    <!-- gift section starts -->
+    <section class="gift mt-5 pb-5" id="gift">
+      <div class="heading text-center pt-5">
+        <small>GIFT</small>
+        <h3> special only for you</h3>
+      </div>
+      <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+        <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+          <div class="card">
+            <img
+              src="images/letter.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By DYNOSOUR</small
+              ><span class="ms-3">Kamis, 09 Januari 2025</span>
+              <h4 class="card-title">
+                <a href="">LETTER</a>
+              </h4>
+              <p class="text-muted">
+                Dibaca baik baik yaaa, 
+                baca sampai habis
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal1">Read It</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+          <div class="card">
+            <img
+              src="images/gift.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By DYNOSOUR</small
+              ><span class="ms-3">Kamis, 09 Januari 2025</span>
+              <h4 class="card-title">
+                <a href="">GIFT</a>
+              </h4>
+              <p class="text-muted">
+                Clue : mudah meletus
+              </p>
+              <a href="https://gifft.me/id/o/d/b80d4s4phmyarkgd57pwbyx4" class="read-more-btn link">Click To Open</a>
+            </div>
+          </div>
+        </div>
+        <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+          <div class="card">
+            <img
+              src="images/question.png"
+              class="card-img-top rounded-4"
+              alt="..."
+            />
+            <div class="card-body px-4">
+              <small>By DYNOSOUR</small
+              ><span class="ms-3">Kamis, 09 Januari 2025</span>
+              <h4 class="card-title">
+                <a href="">QUESTION</a>
+              </h4>
+              <p class="text-muted">
+                Tebak, kira kira ini apa isinya?
+              </p>
+              <a href="#" class="read-more-btn link" data-bs-toggle="modal" data-bs-target="#exampleModal3">Start</a>
+            </div>
+          </div>
+        </div>
+        <!-- here we will make modals if Read more link is clicked the modal will popup -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/letter-1.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By DYNOSOUR</small
+                    ><span class="text-muted ms-2">Kamis, 09 Januari 2025</span>
+                  <h4 class="card-title mt-3">LETTER</h4>
+                  <div class="social-links mt-4">
+                    <button onclick="window.open('http://wa.me/6283877626564', '_blank');" class="rounded-pill whatsapp">
+                      <i class="bi bi-whatsapp"></i>
+                    </button>
+                  </div>
+                  <p class="text-muted mt-3">My dearest, Kaaddiiiii.</p>
+                  <p class="text-muted mt-3"> I can hardly believe that another year has passed, and here we are celebrating another birthday. 
+                    I hope this day brings you all the joy and happiness that you deserve.</p>
+                  <p class="text-muted mt-3">I want you to know how much I love and appreciate everything that you do for me. You make me feel loved, cared for, and valued, and I feel incredibly lucky to have you in my life. 
+                    You have brought so much happiness and joy into my life.</p>
+                  <p class="text-muted mt-3">I admire you for so many reasons - your kindness, your intelligence, your caring, your love and your compassion. 
+                    You inspire me to be a better person, and you push me to be the best version of myself every day. I am so grateful for your love and support, and for the way you always stand by my side, through both the good times and the bad. I want you to know that I am also here for you, now and always. 
+                    I promise to stand by your side, to support you through thick and thin, and to love you unconditionally.</p>
+                  <p class="text-muted mt-3">So on this special day, I want to wish you the happiest of birthdays. May this year be filled with all the things that bring you joy, and may all your dreams and wishes come true. Aamiin</p>
+                  <p class="text-muted mt-3">With all my love,</p>
+                  <p class="text-muted mt-3">DYNOSOUR</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              
+                <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal"><i class="bi bi-x-circle-fill"></i></button>
+              
+              <div class="modal-body px-4">
+                <div class="img">
+                  <img src="images/question-1.png" class="img-fluid" alt="">
+                </div>
+                <div class="content mt-3">
+                  <small>By DYNOSOUR</small
+                    ><span class="text-muted ms-2 ms-md-0"> Kamis, 09 Januari 2025</span>
+                  <h4 class="card-title mt-3">QUESTION</h4>
+                  <p class="text-muted mt-3">Hai sayangggg, hidup penuh teka teki kan yaaa. Susah ditebak</p>
+                  <p class="text-muted mt-3">Cobaaaa kamu isi dulu teka teki silang ini wkwkwkwk</p>
+                  <iframe width="100%" height="400" style="border:3px solid black; margin:auto; display:block" frameborder="0" src="https://crosswordlabs.com/embed/let-me-know-you"></iframe>
+                  <p class="text-muted mt-3">if you're done playing the game and get all the answers correct, download the pdf by click 3 strip and send it to me by click whatsapp below, love you! <3</p>
+                  <div class="social-links mt-4">
+                    <button onclick="window.open('http://wa.me/6283877626564', '_blank');" class="rounded-pill whatsapp">
+                      <i class="bi bi-whatsapp"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gift section ends here -->
+
+      <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button
+      type="button"
+      class="btn btn-floating btn-lg rounded-pill"
+      id="btn-back-to-top"
+    >
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+      <h3 class="text-white pt-4" data-aos="fade-up">HAPPY BIRTHDAY SAYANG</h3>
+      <div class="link-group mt-5" data-aos="fade-up">
+        <a href="#home">Home</a>
+        <div class="vr"></div>
+        <a href="#galery">Galery</a>
+        <div class="vr"></div>
+        <a href="#gift">Gift</a>
+      <div class="social-links mt-5" data-aos="fade-up">
+        <button onclick="window.open('http://wa.me/6283877626564', '_blank');" class="rounded-pill whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </button>
+      </div>
+      <hr class="text-muted my-4" />
+
+      <p>09 Januari 2025 Mine Birthday | Love you, Sayang.</p>
+    </footer>
+    <!-- footer section ends here -->
+
+      <!-- bootstrap javascript cdn link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // initializing AOS library
+      AOS.init({
+        duration: 1000,
+        offset: 50,
+      });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
